@@ -1,0 +1,10 @@
+#include <iostream>
+#include <opencv2/highgui.hpp>
+
+int main()
+{
+    cv::Mat image(300, 400, CV_8UC1, cv::Scalar(200));  //255:white, 0:black
+    cv::imshow("img", image);
+    cv::waitKey(0);
+    return 0;
+}
